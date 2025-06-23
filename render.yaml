@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: whisper-audio-api
+    runtime: python
+    envVars:
+      - key: WHISPER_MODEL
+        value: Systran/faster-whisper-small.en
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn audio_app:app --host 0.0.0.0 --port $PORT
+
+  - type: web
+    name: video-metrics-api
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn video_app:app --host 0.0.0.0 --port $PORT
