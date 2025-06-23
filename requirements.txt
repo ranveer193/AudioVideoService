@@ -1,8 +1,14 @@
-fastapi
-uvicorn[standard]
-python-multipart         # UploadFile handling
-faster-whisper==1.0.1    # CPU-optimised Whisper
-mediapipe==0.10.14       # Face/iris/head-pose landmarks
-opencv-python-headless   # Video frame extraction
-numpy
-scipy
+fastapi==0.110.0
+uvicorn==0.29.0
+
+# Audio transcription
+faster-whisper==1.0.1
+
+# Video analysis
+mediapipe==0.10.9
+opencv-python-headless==4.9.0.80
+numpy==1.24.4
+
+# General dependencies
+python-multipart==0.0.9
+requests==2.31.0
