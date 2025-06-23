@@ -5,7 +5,7 @@ uvicorn==0.29.0
 faster-whisper==1.0.1
 
 # Video analysis (MediaPipe, compatible)
-mediapipe==0.9.1.0
+mediapipe==0.10.3
 
 opencv-python-headless==4.9.0.80
 numpy==1.24.4
