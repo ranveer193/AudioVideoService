@@ -1,15 +1,15 @@
 fastapi==0.110.0
 uvicorn==0.29.0
 
-# Audio
+# Audio transcription
 faster-whisper==1.0.1
 
-# Video (patched MediaPipe version)
-git+https://github.com/Ranbirz1/mediapipe-fixed-version.git
+# Video analysis (MediaPipe, compatible)
+mediapipe==0.9.1.0
 
 opencv-python-headless==4.9.0.80
 numpy==1.24.4
 
-# Other
+# Misc
 python-multipart==0.0.9
 requests==2.31.0
